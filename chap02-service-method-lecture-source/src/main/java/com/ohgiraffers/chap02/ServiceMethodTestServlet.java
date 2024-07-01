@@ -3,13 +3,14 @@ package com.ohgiraffers.chap02;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
-import jakarta.servlet.annotation.WebServlet;
+
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
+import jakarta.servlet.annotation.WebServlet;
 @WebServlet("/request-service")
 public class ServiceMethodTestServlet extends HttpServlet {
 
