@@ -9,6 +9,7 @@
 
 <ul>
     <li><a href="show404error">404 에러 확인</a></li>
+    <li><a href="show500error">500 에러 확인</a></li>
 </ul>
 </body>
 </html>
