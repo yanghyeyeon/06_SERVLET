@@ -15,7 +15,7 @@ public class RedirectServlet extends HttpServlet {
         System.out.println("이 서블릿으로 redirect 성공!");
 
         StringBuilder redirectText = new StringBuilder();
-        redirectText.append("!<doctype html>\n")
+        redirectText.append("<!doctype html>\n")
                 .append("<head>\n")
                 .append("</head>\n")
                 .append("<body>\n")
