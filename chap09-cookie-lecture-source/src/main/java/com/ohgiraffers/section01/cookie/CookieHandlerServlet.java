@@ -16,5 +16,33 @@ public class CookieHandlerServlet extends HttpServlet {
 
         System.out.println("(cookie) firstName : " + firstName);
         System.out.println("(cookie) lastName : " + lastName);
+
+//        response.sendRedirect("redirect");
+
+        /*
+        * 쿠키를 사용하는 절차
+        * 1. 쿠키를 생성한다.
+        * 2. 생성한 쿠키의 만료 시간을 설정한다.
+        * 3. 응답 헤더에 쿠키를 담는다.
+        * 4. 응답을 보낸다.
+        *
+        * 쿠키의 제약사항
+        * 쿠키의 이름은 ascii 문자만을 사용해야 하며 한 번 설정한 쿠키의 이름은 변경 불가
+        * 쿠키의 이름에는 공백문자와 일부 특수문자( [ ] ( ) = , " \ ? @ : ; )을 사용할 수 없다.
+        * */
+
+        // 쿠키는 기본 생성자를 제공하지 않는다.
+        Cookie firstNameCookie = new Cookie("firstName",firstName);
+        Cookie lastNameCookie = new Cookie("lastName",lastName);
+
+        // 초단위 설정 (만료시간을 하루로 둠)
+        firstNameCookie.setMaxAge(60 * 60 * 24);
+        lastNameCookie.setMaxAge(60 * 60 * 24);
+
+        // response에 쿠키 담기
+        response.addCookie(firstNameCookie);
+        response.addCookie(lastNameCookie);
+
+        response.sendRedirect("redirect");
     }
 }
