@@ -19,7 +19,7 @@
     <input type="text" name="userId">
     <br>
     <label>비밀번호 : </label>
-    <input type="text" name="password">
+    <input type="password" name="password">
     <br>
     <label>이름 : </label>
     <input type="text" name="name">
