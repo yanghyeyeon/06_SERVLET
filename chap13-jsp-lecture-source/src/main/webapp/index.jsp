@@ -2,12 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>JSP</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<h1>JSP</h1>
+<ul>
+    <li><a href="jsp/1_simpleJspStates.jsp">jsp 기본 문법</a></li>
+    <li><a href="WEB-INF/testForward.jsp">testForward.jsp 직접접근</a></li>
+</ul>
+<hr>
+
+<form action="/member" method="post">
+    <input type="text" name="name"><br>
+    <input type="submit" value="전송">
+</form>
 </body>
 </html>
