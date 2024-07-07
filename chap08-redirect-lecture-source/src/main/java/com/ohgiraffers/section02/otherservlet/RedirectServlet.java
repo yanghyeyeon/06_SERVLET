@@ -2,11 +2,12 @@ package com.ohgiraffers.section02.otherservlet;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.WebServlet;
+
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import jakarta.servlet.annotation.WebServlet;
 @WebServlet("/redirect")
 public class RedirectServlet extends HttpServlet {
     @Override
